@@ -1,0 +1,2 @@
+To run the code run SpamFilter.java which will output a decimal percentage(For example 0.80 is 80%). This percentage is the amount of
+emails that where successfully classisifed as either spam or otherwise
