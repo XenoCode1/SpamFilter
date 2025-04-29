@@ -40,6 +40,7 @@ public class Emails {
                 }
             }
         }
+        //checks if we are following the supplied ratio
         if(matchpoints/emailText.length >= p){
             return true;
         }

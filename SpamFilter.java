@@ -50,6 +50,7 @@ public class SpamFilter{
             };
             int amountCorrect = 0;
             for(int i = 0; i < allEmails.size(); i++){
+                //checks if the result matches the supplied answer
                 if(!(allEmails.get(i).check(phrases, 0.5)) && allEmails.get(i).getType() == '0'){
                     amountCorrect++;
                 }
@@ -57,6 +58,7 @@ public class SpamFilter{
                     amountCorrect++;
                 }
             }
+            //prints success ratio
             System.out.println((double)(amountCorrect)/(double)emailsCount);
         } catch (Exception e) {
             System.out.println("Emails not found");
